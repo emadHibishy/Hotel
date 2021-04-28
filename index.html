@@ -10,16 +10,22 @@
     <link rel="stylesheet" href="plugins/WOW/css/libs/animate.css">
     <link rel="stylesheet" href="plugins/OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.2.1.min.js" defer></script>
     <script src="js/bootstrap.bundle.min.js" defer></script>
     <script src="plugins/WOW/dist/wow.min.js" defer></script>
     <script src="plugins/OwlCarousel/dist/owl.carousel.min.js" defer></script>
     <script src="plugins/niceScroll/jquery.nicescroll.min.js" defer></script>
+    <script src="js/bootstrap-datepicker.min.js" defer></script>
+    <script src="js/jquery.nice-select.min.js" defer></script>
     <script src="js/init.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <!-- start header-->
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg">
@@ -63,7 +69,7 @@
             <h6>Away from monotonous life</h6>
             <h1>Relax Your Mind</h1>
             <p>If you are looking at blank cassettes on the web, you may be very confused at the<br> difference in price. You may see some for as low as $.17 each.</p>
-            <a href="#" class="btn btn-warning">Get Started</a>
+            <a href="#" class="btn btn-warning hvr-sweep-to-right">Get Started</a>
         </div>
         <div class="container book">
             <div class="container">
@@ -74,36 +80,50 @@
                         </div>
                         <div class="col-md-9">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-2">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Arrival Date">
+                                        <input type="text" class="form-control datepicker" placeholder="Arrival Date">
                                         <span><i class="fa fa-calendar-alt"></i></span>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-3">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Arrival Date">
+                                        <select class="form-control">
+                                            <option data-display="Adult">Adult</option>
+                                            <option value="1">Old</option>
+                                            <option value="2">Younger</option>
+                                            <option value="3">Potato</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-3">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Arrival Date">
+                                        <select class="form-control">
+                                            <option data-display="Room">Room</option>
+                                            <option value="1">Room 01</option>
+                                            <option value="2">Room 02</option>
+                                            <option value="3">Room 03</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-2">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Depature Date">
+                                        <input type="text" class="form-control datepicker" placeholder="Depature Date">
                                         <span><i class="fa fa-calendar-alt"></i></span>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-3">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Arrival Date">
+                                        <select class="form-control">
+                                            <option data-display="Child">Child</option>
+                                            <option value="1">Child</option>
+                                            <option value="2">Baby</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-3">
                                     <div class="form-group">
-                                        <input type="submit" class="btn btn-warning d-block w-100" value="book now">
+                                        <button type="submit" class="btn w-100 hvr-sweep-to-right">Book Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -113,5 +133,427 @@
             </div>
         </div>
     </header>
+    <!-- end header-->
+
+    <!-- start rooms-->
+    <section class="rooms">
+        <div class="container text-center">
+            <h2>Hotel Accomodation</h2>
+            <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast.</p>
+            <div class="row justify-content-center rooms__gallery">
+                <div class="col-8 col-sm-5 col-lg-3">
+                    <div class="room">
+                        <div class="room-img">
+                            <img src="img/room1.jpg" alt="room1">
+                            <a href="#" class="btn btn-warning hvr-sweep-to-right">book now</a>
+                        </div>
+                        <h4>Double Deluxe Room</h4>
+                        <h5><span class="h2">$250</span>/night</h5>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-5 col-lg-3">
+                    <div class="room">
+                        <div class="room-img">
+                            <img src="img/room2.jpg" alt="room2">
+                            <a href="#" class="btn btn-warning hvr-sweep-to-right">book now</a>
+                        </div>
+                        <h4>Single Deluxe Room</h4>
+                        <h5><span class="h2">$200</span>/night</h5>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-5 col-lg-3">
+                    <div class="room">
+                        <div class="room-img">
+                            <img src="img/room3.jpg" alt="room3">
+                            <a href="#" class="btn btn-warning hvr-sweep-to-right">book now</a>
+                        </div>
+                        <h4>Honeymoon Suit</h4>
+                        <h5><span class="h2">$750</span>/night</h5>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-5 col-lg-3">
+                    <div class="room">
+                        <div class="room-img">
+                            <img src="img/room4.jpg" alt="room4">
+                            <a href="#" class="btn btn-warning hvr-sweep-to-right">book now</a>
+                        </div>
+                        <h4>Economy Double</h4>
+                        <h5><span class="h2">$200</span>/night</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end rooms-->
+
+    <!-- start facilities-->
+    <section class="facilities">
+        <div class="overlay"></div>
+        <div class="container facilities__content">
+            <div class="facilities__header text-center">
+                <h2 class="h1">Royal Facilities</h2>
+                <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="facility">
+                        <h4><i class="fas fa-utensils"></i> Restaurant</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="facility">
+                        <h4><i class="fas fa-biking"></i> Sports Club</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="facility">
+                        <h4><i class="fas fa-tshirt"></i> Swimming Pool</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="facility">
+                        <h4><i class="fas fa-car"></i> Rent Car</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="facility">
+                        <h4><i class="fas fa-dumbbell"></i> Gymnesium</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="facility">
+                        <h4><i class="fas fa-glass-cheers"></i> Bar</h4>
+                        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end facilities-->
+
+    <!-- start about -->
+    <section class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="about__content">
+                        <h2 class="h1">About Us Our History Mission & Vision</h2>
+                        <p class="lead">
+                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.
+                        </p>
+                        <a href="#" class="btn hvr-sweep-to-right">Request Custom Price</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about__img">
+                        <img class="img-fluid" src="img/about_bg.jpg" alt="about us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+
+    <!-- start testimonial-->
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial__content text-center">
+                <h2 class="h1">Testimonial from our Clients</h2>
+                <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="row align-items-start">
+                        <div class="col-3">
+                            <img src="img/testtimonial-1.jpg" class="rounded-circle" alt="testimonial">
+                        </div>
+                        <div class="col-9">
+                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
+                            <a href="#">
+                                <h4>Fanny Spencer</h4>
+                            </a>
+                            <a href="#" class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row align-items-start">
+                        <div class="col-3">
+                            <img src="img/testtimonial-1.jpg" class="rounded-circle" alt="testimonial">
+                        </div>
+                        <div class="col-9">
+                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
+                            <a href="#">
+                                <h4>Fanny Spencer</h4>
+                            </a>
+                            <a href="#" class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row align-items-start">
+                        <div class="col-3">
+                            <img src="img/testtimonial-1.jpg" class="rounded-circle" alt="testimonial">
+                        </div>
+                        <div class="col-9">
+                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
+                            <a href="#">
+                                <h4>Fanny Spencer</h4>
+                            </a>
+                            <a href="#" class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row align-items-start">
+                        <div class="col-3">
+                            <img src="img/testtimonial-1.jpg" class="rounded-circle" alt="testimonial">
+                        </div>
+                        <div class="col-9">
+                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
+                            <a href="#">
+                                <h4>Fanny Spencer</h4>
+                            </a>
+                            <a href="#" class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end testimonial-->
+
+    <!-- start blogs -->
+    <section class="blogs">
+        <div class="container">
+            <div class="blogs__content text-center">
+                <h2 class="h1">latest posts from blog</h2>
+                <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog mb-4">
+                        <div class="blog__img">
+                            <img src="img/blog-1.jpg" alt="blog-1" class="img-fluid">
+                        </div>
+                        <div class="blog__details">
+                            <a href="#" class="d-inline-block p-1 mr-3 hvr-sweep-to-right">Travel</a>
+                            <a href="#" class="d-inline-block p-1 mr-3 hvr-sweep-to-right">Life Style</a>
+                            <a href="#">
+                                <h4>Low Cost Advertising</h4>
+                            </a>
+                            <p>
+                                Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
+                            </p>
+                            <h6>31st January,2018</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog mb-4">
+                        <div class="blog__img">
+                            <img src="img/blog-2.jpg" alt="blog-2" class="img-fluid">
+                        </div>
+                        <div class="blog__details">
+                            <a href="#" class="d-inline-block p-1 mr-3 hvr-sweep-to-right">Travel</a>
+                            <a href="#" class="d-inline-block p-1 mr-3 hvr-sweep-to-right">Life Style</a>
+                            <a href="#">
+                                <h4>Creative Outdoor Ads</h4>
+                            </a>
+                            <p>
+                                Self-doubt and fear interfere with our ability to achieve or set goals. Self-doubt and fear are
+                            </p>
+                            <h6>31st January,2018</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog mb-4">
+                        <div class="blog__img">
+                            <img src="img/blog-3.jpg" alt="blog-3" class="img-fluid">
+                        </div>
+                        <div class="blog__details">
+                            <a href="#" class="d-inline-block p-1 mr-3 hvr-sweep-to-right">Travel</a>
+                            <a href="#" class="d-inline-block p-1 mr-3 hvr-sweep-to-right">Life Style</a>
+                            <a href="#">
+                                <h4>It S Classified How To Utilize Free</h4>
+                            </a>
+                            <p>
+                                Why do you want to motivate yourself? Actually, just answering that question fully can
+                            </p>
+                            <h6>31st January,2018</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end blogs-->
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer__about">
+                        <h5>ABOUT AGENCY</h5>
+                        <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer__links">
+                        <h5>NAVIGATION LINKS</h5>
+                        <div class="row">
+                            <div class="col-4">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Feature</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Portfolio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer__newsletter">
+                        <h5>NEWSLETTER</h5>
+                        <p>For business professionals caught between high OEM price and mediocre print and graphic output,</p>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address">
+                                <button type="submit">
+                                    <i class="fal fa-location-arrow"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="instafead">
+                        <h5>INSTAFEED</h5>
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="d-inline-block m-1">
+                                <img src="img/Image-01.jpg" alt="INSTAFEED 01">
+                            </li>
+                            <li class="d-inline-block m-1">
+                                <img src="img/Image-02.jpg" alt="INSTAFEED 02">
+                            </li>
+                            <li class="d-inline-block m-1">
+                                <img src="img/Image-03.jpg" alt="INSTAFEED 03">
+                            </li>
+                            <li class="d-inline-block m-1">
+                                <img src="img/Image-04.jpg" alt="INSTAFEED 04">
+                            </li>
+                            <li class="d-inline-block m-1">
+                                <img src="img/Image-05.jpg" alt="INSTAFEED 05">
+                            </li>
+                            <li class="d-inline-block m-1">
+                                <img src="img/Image-06.jpg" alt="INSTAFEED 06">
+                            </li>
+                            <li class="d-inline-block m-1">
+                                <img src="img/Image-07.jpg" alt="INSTAFEED 07">
+                            </li>
+                            <li class="d-inline-block m-1">
+                                <img src="img/Image-08.jpg" alt="INSTAFEED 08">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-8">
+                    <div class="copyright text-center text-lg-left">
+                        <p>
+                            Copyright &copy; 2021 All rights reserved | This template is made with 
+                            <i class="fas fa-heart"></i>
+                            By <span>Emad</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="social text-center text-lg-right">
+                        <a href="#" class="mx-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="mx-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="mx-2">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="mx-2">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
 </body>
 </html>
