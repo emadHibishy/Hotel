@@ -24,4 +24,12 @@ $(document).ready(function() {
             }
         }
     })
+
+    $('html').niceScroll({
+        cursorcolor: '#fab915',
+        cursorwidth: 8,
+        cursorborderradius: 5,
+        cursorborder: '1px solid #fab915'
+        
+    });
 });

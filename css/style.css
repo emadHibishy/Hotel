@@ -19,7 +19,7 @@ header{
     background-position-x: center;
     background-position-y: 0px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 header .overlay{
     position: absolute;
@@ -30,8 +30,6 @@ header .overlay{
     background-color: rgba(0, 0, 0, 0.397);
     z-index: -1;
 }
-header
-
 /* start navbar */
 .navbar{
     background: #fff;
@@ -238,7 +236,7 @@ header
     background-image: url('../img/facilites_bg.jpg');
     background-size: cover;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 .facilities .overlay{
     position: absolute;
